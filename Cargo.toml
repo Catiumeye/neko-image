@@ -1,0 +1,8 @@
+[package]
+name = "neko-image"
+version = "0.0.1"
+edition = "2021"
+
+[dependencies]
+clap = "4.4.8"
+image = "0.24.7"
