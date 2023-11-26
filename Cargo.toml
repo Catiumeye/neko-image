@@ -1,7 +1,13 @@
 [package]
+authors = ["Catiumeye"]
 name = "neko-image"
 version = "0.0.1"
 edition = "2021"
+license = "Apache License Version 2.0"
+
+[[bin]]
+name = "neko-image"
+path = "src/main.rs"
 
 [dependencies]
 clap = "4.4.8"
