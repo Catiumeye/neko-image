@@ -1,10 +1,13 @@
 [package]
 authors = ["Catiumeye"]
 name = "neko-image"
-version = "0.0.2"
+version = "0.0.3"
 edition = "2021"
-license = "Apache-2.0"
+license = "MIT OR Apache-2.0"
 description = "CLI utility for image processing written in rust🏳️‍⚧️"
+keywords = ["cli", "image", "processing"]
+categories = ["command-line-utilities", "multimedia::images", "compression"]
+repository = "https://github.com/Catiumeye/neko-image"
 
 [[bin]]
 name = "neko-image"

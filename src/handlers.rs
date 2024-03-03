@@ -82,14 +82,6 @@ pub fn compress(case: &ArgMatches) {
 
 pub fn make_ascii(case: &ArgMatches) {
     let image_path = case.get_one::<PathBuf>("path").unwrap();
-    // let image_output_path_raw = case.get_one::<String>("output");
-    // let output_path = if let Some(out_path) = image_output_path_raw {
-    //     let out_path_buf_raw = PathBuf::from(out_path);
-    //     println!("!!!!{:?}",out_path_buf_raw.extension());
-    // } else {
-
-    // };
-    // println!("{:?}", output_path);
 
     let gamma = case.get_one::<String>("gamma").unwrap().parse::<f32>().unwrap();
     let target_height = case.get_one::<u32>("height").unwrap().to_owned();
@@ -149,8 +141,6 @@ pub fn make_ascii(case: &ArgMatches) {
         }
         ascii_art.push('\n');
     }
-    println!("{:?} {:?}", env::current_exe(), env::current_dir());
+
     Clipboard::new().unwrap().set_text(&ascii_art).unwrap();
-    fs::write("./output.txt", ascii_art).unwrap();
-    // println!("{ascii_art}");
 }

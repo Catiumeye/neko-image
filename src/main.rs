@@ -17,7 +17,7 @@ fn main() {
 
   	let mathches = Command::new("NekoImage")
     	.after_help(rust_programmer_colors)
-    	.version("0.0.2")
+    	.version("0.0.3")
     	.subcommand_required(true)
     	.arg_required_else_help(true)
     	.author(color_print::cstr!("Catiumeye"))
@@ -68,7 +68,7 @@ fn main() {
 				Arg::new("gamma")
 				.short('g')
 				.long("gamma")
-				.help("Image gamma 0..1 floating number")
+				.help("Image gamma 0..666 floating number")
 				.default_value("0.6")
 			)
 			.arg(
